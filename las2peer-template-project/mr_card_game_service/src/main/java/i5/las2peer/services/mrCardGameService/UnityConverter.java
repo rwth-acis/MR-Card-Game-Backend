@@ -1,4 +1,4 @@
-package i5.las2peer.services.mrCardGameService;
+package i5.las2peer.services.mRCardGameService;
 
 import io.swagger.annotations.*;
 

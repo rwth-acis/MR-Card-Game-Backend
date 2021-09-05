@@ -1,0 +1,212 @@
+2021 sept. 05 15:50:47 FINER i5.las2peer.p2p.LocalNode: NODE_STATUS_CHANGE (300)	-	-	-	-	CONFIGURED	
+2021 sept. 05 15:50:47 FINER i5.las2peer.p2p.LocalNode: NODE_STATUS_CHANGE (300)	-	-	-	-	RUNNING	
+2021 sept. 05 15:50:48 FINER i5.las2peer.p2p.LocalNode: AGENT_REGISTERED (3000)	8005782783448291310 (java.lang.Long)	dc1f7e36529bf8899706ecf7dc4eec327279ca69a6b17c681bd15afb942b4bc6c00bd6e402b5456811e932eca9dd24d95f2dfa73ea2fa4b15069856f513a08cc	-	-	ServiceAgent	
+2021 sept. 05 15:50:50 FINER i5.las2peer.p2p.LocalNode: SERVICE_ADD_TO_MONITORING (7300)	8005782783448291310 (java.lang.Long)	dc1f7e36529bf8899706ecf7dc4eec327279ca69a6b17c681bd15afb942b4bc6c00bd6e402b5456811e932eca9dd24d95f2dfa73ea2fa4b15069856f513a08cc	-	-	{"serviceName":"i5.las2peer.services.mRCardGameService.MRCardGameService@1.0.0","serviceAlias":"template"}	
+2021 sept. 05 15:50:50 FINER i5.las2peer.p2p.LocalNode: SERVICE_STARTUP (7000)	8005782783448291310 (java.lang.Long)	dc1f7e36529bf8899706ecf7dc4eec327279ca69a6b17c681bd15afb942b4bc6c00bd6e402b5456811e932eca9dd24d95f2dfa73ea2fa4b15069856f513a08cc	-	-	i5.las2peer.services.mRCardGameService.MRCardGameService@1.0.0	
+2021 sept. 05 15:50:52 FINER i5.las2peer.p2p.LocalNode: CONNECTOR_MESSAGE (9000)	8005782783448291310 (java.lang.Long)	-	-	-	WebConnector: Web-Connector in HTTP mode running at http://localhost:49746	
+2021 sept. 05 15:50:52 INFO i5.las2peer.connectors.webConnector.util.AuthenticationManager: attempting login with id: 86109d17e62c60cf01fa1e4e968e8cdc69219d59a04587648f253d71d49a3af51eea113ac37be9501cb196126b56d24de638e0d3f3c8cf1991aab89e215a3cb9
+2021 sept. 05 15:50:52 FINE i5.las2peer.connectors.webConnector.util.AuthenticationManager: passphrase accepted. Agent unlocked
+2021 sept. 05 15:50:52 FINER i5.las2peer.persistency.EnvelopeVersion: Could not get service class loader using default. java.lang.IllegalStateException: Not executed in a ServiceThread environment!
+2021 sept. 05 15:50:53 FINER i5.las2peer.p2p.LocalNode: CONNECTOR_MESSAGE (9000)	8005782783448291310 (java.lang.Long)	-	-	-	WebConnector: Web-Connector has been stopped	
+2021 sept. 05 15:50:53 FINER i5.las2peer.p2p.LocalNode: SERVICE_SHUTDOWN (7100)	8005782783448291310 (java.lang.Long)	dc1f7e36529bf8899706ecf7dc4eec327279ca69a6b17c681bd15afb942b4bc6c00bd6e402b5456811e932eca9dd24d95f2dfa73ea2fa4b15069856f513a08cc	-	-	i5.las2peer.services.mRCardGameService.MRCardGameService@1.0.0	
+2021 sept. 05 15:50:53 FINER i5.las2peer.p2p.LocalNode: NODE_SHUTDOWN (200)	8005782783448291310 (java.lang.Long)	-	-	-	-	
+2021 sept. 05 15:50:53 FINER i5.las2peer.p2p.LocalNode: NODE_STATUS_CHANGE (300)	-	-	-	-	CONFIGURED	
+2021 sept. 05 15:50:53 FINER i5.las2peer.p2p.LocalNode: NODE_STATUS_CHANGE (300)	-	-	-	-	RUNNING	
+2021 sept. 05 15:50:53 FINER i5.las2peer.p2p.LocalNode: AGENT_REGISTERED (3000)	2501953002982616930 (java.lang.Long)	3a4f5a940823d7b4d4a2b53379f7d03a437c1e1fbd51ee3a49094d204858997772b9febe3ff358be07d5eee9d5e7e758c0b2b8b97d176ef595de3514d378f424	-	-	ServiceAgent	
+2021 sept. 05 15:50:54 FINER i5.las2peer.p2p.LocalNode: SERVICE_ADD_TO_MONITORING (7300)	2501953002982616930 (java.lang.Long)	3a4f5a940823d7b4d4a2b53379f7d03a437c1e1fbd51ee3a49094d204858997772b9febe3ff358be07d5eee9d5e7e758c0b2b8b97d176ef595de3514d378f424	-	-	{"serviceName":"i5.las2peer.services.mRCardGameService.MRCardGameService@1.0.0","serviceAlias":"template"}	
+2021 sept. 05 15:50:54 FINER i5.las2peer.p2p.LocalNode: SERVICE_STARTUP (7000)	2501953002982616930 (java.lang.Long)	3a4f5a940823d7b4d4a2b53379f7d03a437c1e1fbd51ee3a49094d204858997772b9febe3ff358be07d5eee9d5e7e758c0b2b8b97d176ef595de3514d378f424	-	-	i5.las2peer.services.mRCardGameService.MRCardGameService@1.0.0	
+2021 sept. 05 15:50:54 FINER i5.las2peer.p2p.LocalNode: CONNECTOR_MESSAGE (9000)	2501953002982616930 (java.lang.Long)	-	-	-	WebConnector: Web-Connector in HTTP mode running at http://localhost:49751	
+2021 sept. 05 15:50:54 INFO i5.las2peer.connectors.webConnector.util.AuthenticationManager: attempting login with id: 86109d17e62c60cf01fa1e4e968e8cdc69219d59a04587648f253d71d49a3af51eea113ac37be9501cb196126b56d24de638e0d3f3c8cf1991aab89e215a3cb9
+2021 sept. 05 15:50:54 FINE i5.las2peer.connectors.webConnector.util.AuthenticationManager: passphrase accepted. Agent unlocked
+2021 sept. 05 15:50:54 FINER i5.las2peer.persistency.EnvelopeVersion: Could not get service class loader using default. java.lang.IllegalStateException: Not executed in a ServiceThread environment!
+2021 sept. 05 15:50:54 FINER i5.las2peer.p2p.LocalNode: CONNECTOR_MESSAGE (9000)	2501953002982616930 (java.lang.Long)	-	-	-	WebConnector: Web-Connector has been stopped	
+2021 sept. 05 15:50:54 FINER i5.las2peer.p2p.LocalNode: SERVICE_SHUTDOWN (7100)	2501953002982616930 (java.lang.Long)	3a4f5a940823d7b4d4a2b53379f7d03a437c1e1fbd51ee3a49094d204858997772b9febe3ff358be07d5eee9d5e7e758c0b2b8b97d176ef595de3514d378f424	-	-	i5.las2peer.services.mRCardGameService.MRCardGameService@1.0.0	
+2021 sept. 05 15:50:54 FINER i5.las2peer.p2p.LocalNode: NODE_SHUTDOWN (200)	2501953002982616930 (java.lang.Long)	-	-	-	-	
+2021 sept. 05 15:57:30 FINER i5.las2peer.p2p.LocalNode: NODE_STATUS_CHANGE (300)	-	-	-	-	CONFIGURED	
+2021 sept. 05 15:57:30 FINER i5.las2peer.p2p.LocalNode: NODE_STATUS_CHANGE (300)	-	-	-	-	RUNNING	
+2021 sept. 05 15:57:31 FINER i5.las2peer.p2p.LocalNode: AGENT_REGISTERED (3000)	-7491072490429030600 (java.lang.Long)	010b927acea6e30a84f76957de8d626cb0b1790be8cfab1724defcb3ff24acdfcdf370f42f00c30b68bb9d9a7b55d22de0dbcbdd278748440d2c382bde1084cc	-	-	ServiceAgent	
+2021 sept. 05 15:57:33 FINER i5.las2peer.p2p.LocalNode: SERVICE_ADD_TO_MONITORING (7300)	-7491072490429030600 (java.lang.Long)	010b927acea6e30a84f76957de8d626cb0b1790be8cfab1724defcb3ff24acdfcdf370f42f00c30b68bb9d9a7b55d22de0dbcbdd278748440d2c382bde1084cc	-	-	{"serviceName":"i5.las2peer.services.mRCardGameService.MRCardGameService@1.0.0","serviceAlias":"template"}	
+2021 sept. 05 15:57:33 FINER i5.las2peer.p2p.LocalNode: SERVICE_STARTUP (7000)	-7491072490429030600 (java.lang.Long)	010b927acea6e30a84f76957de8d626cb0b1790be8cfab1724defcb3ff24acdfcdf370f42f00c30b68bb9d9a7b55d22de0dbcbdd278748440d2c382bde1084cc	-	-	i5.las2peer.services.mRCardGameService.MRCardGameService@1.0.0	
+2021 sept. 05 15:57:35 FINER i5.las2peer.p2p.LocalNode: CONNECTOR_MESSAGE (9000)	-7491072490429030600 (java.lang.Long)	-	-	-	WebConnector: Web-Connector in HTTP mode running at http://localhost:51755	
+2021 sept. 05 15:57:35 INFO i5.las2peer.connectors.webConnector.util.AuthenticationManager: attempting login with id: 86109d17e62c60cf01fa1e4e968e8cdc69219d59a04587648f253d71d49a3af51eea113ac37be9501cb196126b56d24de638e0d3f3c8cf1991aab89e215a3cb9
+2021 sept. 05 15:57:35 FINE i5.las2peer.connectors.webConnector.util.AuthenticationManager: passphrase accepted. Agent unlocked
+2021 sept. 05 15:57:35 FINER i5.las2peer.persistency.EnvelopeVersion: Could not get service class loader using default. java.lang.IllegalStateException: Not executed in a ServiceThread environment!
+2021 sept. 05 15:57:35 INFO i5.las2peer.restMapper.GenericExceptionMapper: Request failed: java.lang.NullPointerException
+java.lang.NullPointerException
+	at i5.las2peer.services.mRCardGameService.MRCardGameService.getFilesInLevel(MRCardGameService.java:142)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:255)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:234)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680)
+	at i5.las2peer.restMapper.RESTService.handle(RESTService.java:148)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at i5.las2peer.execution.ServiceHelper.execute(ServiceHelper.java:139)
+	at i5.las2peer.security.ServiceAgentImpl.invoke(ServiceAgentImpl.java:453)
+	at i5.las2peer.security.ServiceAgentImpl.lambda$handle$0(ServiceAgentImpl.java:479)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021 sept. 05 15:57:36 FINER i5.las2peer.p2p.LocalNode: CONNECTOR_MESSAGE (9000)	-7491072490429030600 (java.lang.Long)	-	-	-	WebConnector: Web-Connector has been stopped	
+2021 sept. 05 15:57:36 FINER i5.las2peer.p2p.LocalNode: SERVICE_SHUTDOWN (7100)	-7491072490429030600 (java.lang.Long)	010b927acea6e30a84f76957de8d626cb0b1790be8cfab1724defcb3ff24acdfcdf370f42f00c30b68bb9d9a7b55d22de0dbcbdd278748440d2c382bde1084cc	-	-	i5.las2peer.services.mRCardGameService.MRCardGameService@1.0.0	
+2021 sept. 05 15:57:36 FINER i5.las2peer.p2p.LocalNode: NODE_SHUTDOWN (200)	-7491072490429030600 (java.lang.Long)	-	-	-	-	
+2021 sept. 05 15:57:36 FINER i5.las2peer.p2p.LocalNode: NODE_STATUS_CHANGE (300)	-	-	-	-	CONFIGURED	
+2021 sept. 05 15:57:36 FINER i5.las2peer.p2p.LocalNode: NODE_STATUS_CHANGE (300)	-	-	-	-	RUNNING	
+2021 sept. 05 15:57:36 FINER i5.las2peer.p2p.LocalNode: AGENT_REGISTERED (3000)	-3253076398936160406 (java.lang.Long)	dce560ddb67732771c639e60b4ce815cefa9ca34ca6073d35df3681f23061e9953268a83d95753eee54d736379becb42c9ecca3267ec637d665b91798505cfa3	-	-	ServiceAgent	
+2021 sept. 05 15:57:36 FINER i5.las2peer.p2p.LocalNode: SERVICE_ADD_TO_MONITORING (7300)	-3253076398936160406 (java.lang.Long)	dce560ddb67732771c639e60b4ce815cefa9ca34ca6073d35df3681f23061e9953268a83d95753eee54d736379becb42c9ecca3267ec637d665b91798505cfa3	-	-	{"serviceName":"i5.las2peer.services.mRCardGameService.MRCardGameService@1.0.0","serviceAlias":"template"}	
+2021 sept. 05 15:57:36 FINER i5.las2peer.p2p.LocalNode: SERVICE_STARTUP (7000)	-3253076398936160406 (java.lang.Long)	dce560ddb67732771c639e60b4ce815cefa9ca34ca6073d35df3681f23061e9953268a83d95753eee54d736379becb42c9ecca3267ec637d665b91798505cfa3	-	-	i5.las2peer.services.mRCardGameService.MRCardGameService@1.0.0	
+2021 sept. 05 15:57:36 FINER i5.las2peer.p2p.LocalNode: CONNECTOR_MESSAGE (9000)	-3253076398936160406 (java.lang.Long)	-	-	-	WebConnector: Web-Connector in HTTP mode running at http://localhost:51759	
+2021 sept. 05 15:57:36 INFO i5.las2peer.connectors.webConnector.util.AuthenticationManager: attempting login with id: 86109d17e62c60cf01fa1e4e968e8cdc69219d59a04587648f253d71d49a3af51eea113ac37be9501cb196126b56d24de638e0d3f3c8cf1991aab89e215a3cb9
+2021 sept. 05 15:57:36 FINE i5.las2peer.connectors.webConnector.util.AuthenticationManager: passphrase accepted. Agent unlocked
+2021 sept. 05 15:57:36 FINER i5.las2peer.persistency.EnvelopeVersion: Could not get service class loader using default. java.lang.IllegalStateException: Not executed in a ServiceThread environment!
+2021 sept. 05 15:57:36 INFO i5.las2peer.restMapper.GenericExceptionMapper: Request failed: javax.ws.rs.NotSupportedException: HTTP 415 Unsupported Media Type
+javax.ws.rs.NotSupportedException: HTTP 415 Unsupported Media Type
+	at org.glassfish.jersey.server.internal.routing.MethodSelectingRouter.getMethodRouter(MethodSelectingRouter.java:412)
+	at org.glassfish.jersey.server.internal.routing.MethodSelectingRouter.access$000(MethodSelectingRouter.java:73)
+	at org.glassfish.jersey.server.internal.routing.MethodSelectingRouter$4.apply(MethodSelectingRouter.java:665)
+	at org.glassfish.jersey.server.internal.routing.MethodSelectingRouter.apply(MethodSelectingRouter.java:305)
+	at org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:86)
+	at org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:89)
+	at org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:89)
+	at org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:89)
+	at org.glassfish.jersey.server.internal.routing.RoutingStage.apply(RoutingStage.java:69)
+	at org.glassfish.jersey.server.internal.routing.RoutingStage.apply(RoutingStage.java:38)
+	at org.glassfish.jersey.process.internal.Stages.process(Stages.java:173)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:247)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:234)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680)
+	at i5.las2peer.restMapper.RESTService.handle(RESTService.java:148)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at i5.las2peer.execution.ServiceHelper.execute(ServiceHelper.java:139)
+	at i5.las2peer.security.ServiceAgentImpl.invoke(ServiceAgentImpl.java:453)
+	at i5.las2peer.security.ServiceAgentImpl.lambda$handle$0(ServiceAgentImpl.java:479)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021 sept. 05 15:57:36 FINER i5.las2peer.p2p.LocalNode: CONNECTOR_MESSAGE (9000)	-3253076398936160406 (java.lang.Long)	-	-	-	WebConnector: Web-Connector has been stopped	
+2021 sept. 05 15:57:36 FINER i5.las2peer.p2p.LocalNode: SERVICE_SHUTDOWN (7100)	-3253076398936160406 (java.lang.Long)	dce560ddb67732771c639e60b4ce815cefa9ca34ca6073d35df3681f23061e9953268a83d95753eee54d736379becb42c9ecca3267ec637d665b91798505cfa3	-	-	i5.las2peer.services.mRCardGameService.MRCardGameService@1.0.0	
+2021 sept. 05 15:57:36 FINER i5.las2peer.p2p.LocalNode: NODE_SHUTDOWN (200)	-3253076398936160406 (java.lang.Long)	-	-	-	-	
+2021 sept. 05 15:58:09 FINER i5.las2peer.p2p.LocalNode: NODE_STATUS_CHANGE (300)	-	-	-	-	CONFIGURED	
+2021 sept. 05 15:58:09 FINER i5.las2peer.p2p.LocalNode: NODE_STATUS_CHANGE (300)	-	-	-	-	RUNNING	
+2021 sept. 05 15:58:10 FINER i5.las2peer.p2p.LocalNode: AGENT_REGISTERED (3000)	-7298771754669019861 (java.lang.Long)	f239bf9884c2484be50c8e0d53909aa3bbc67b79129c647a7edd5a7c1331b54db2dc359598394c540101995b774c06dceb70295f0c4165df523467d75150e6b0	-	-	ServiceAgent	
+2021 sept. 05 15:58:12 FINER i5.las2peer.p2p.LocalNode: SERVICE_ADD_TO_MONITORING (7300)	-7298771754669019861 (java.lang.Long)	f239bf9884c2484be50c8e0d53909aa3bbc67b79129c647a7edd5a7c1331b54db2dc359598394c540101995b774c06dceb70295f0c4165df523467d75150e6b0	-	-	{"serviceName":"i5.las2peer.services.mRCardGameService.MRCardGameService@1.0.0","serviceAlias":"template"}	
+2021 sept. 05 15:58:12 FINER i5.las2peer.p2p.LocalNode: SERVICE_STARTUP (7000)	-7298771754669019861 (java.lang.Long)	f239bf9884c2484be50c8e0d53909aa3bbc67b79129c647a7edd5a7c1331b54db2dc359598394c540101995b774c06dceb70295f0c4165df523467d75150e6b0	-	-	i5.las2peer.services.mRCardGameService.MRCardGameService@1.0.0	
+2021 sept. 05 15:58:13 FINER i5.las2peer.p2p.LocalNode: CONNECTOR_MESSAGE (9000)	-7298771754669019861 (java.lang.Long)	-	-	-	WebConnector: Web-Connector in HTTP mode running at http://localhost:51786	
+2021 sept. 05 15:58:13 INFO i5.las2peer.connectors.webConnector.util.AuthenticationManager: attempting login with id: 86109d17e62c60cf01fa1e4e968e8cdc69219d59a04587648f253d71d49a3af51eea113ac37be9501cb196126b56d24de638e0d3f3c8cf1991aab89e215a3cb9
+2021 sept. 05 15:58:13 FINE i5.las2peer.connectors.webConnector.util.AuthenticationManager: passphrase accepted. Agent unlocked
+2021 sept. 05 15:58:13 FINER i5.las2peer.persistency.EnvelopeVersion: Could not get service class loader using default. java.lang.IllegalStateException: Not executed in a ServiceThread environment!
+2021 sept. 05 15:58:14 INFO i5.las2peer.restMapper.GenericExceptionMapper: Request failed: javax.ws.rs.NotFoundException: HTTP 404 Not Found
+javax.ws.rs.NotFoundException: HTTP 404 Not Found
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:252)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:234)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680)
+	at i5.las2peer.restMapper.RESTService.handle(RESTService.java:148)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at i5.las2peer.execution.ServiceHelper.execute(ServiceHelper.java:139)
+	at i5.las2peer.security.ServiceAgentImpl.invoke(ServiceAgentImpl.java:453)
+	at i5.las2peer.security.ServiceAgentImpl.lambda$handle$0(ServiceAgentImpl.java:479)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021 sept. 05 15:58:14 FINER i5.las2peer.p2p.LocalNode: CONNECTOR_MESSAGE (9000)	-7298771754669019861 (java.lang.Long)	-	-	-	WebConnector: Web-Connector has been stopped	
+2021 sept. 05 15:58:14 FINER i5.las2peer.p2p.LocalNode: SERVICE_SHUTDOWN (7100)	-7298771754669019861 (java.lang.Long)	f239bf9884c2484be50c8e0d53909aa3bbc67b79129c647a7edd5a7c1331b54db2dc359598394c540101995b774c06dceb70295f0c4165df523467d75150e6b0	-	-	i5.las2peer.services.mRCardGameService.MRCardGameService@1.0.0	
+2021 sept. 05 15:58:14 FINER i5.las2peer.p2p.LocalNode: NODE_SHUTDOWN (200)	-7298771754669019861 (java.lang.Long)	-	-	-	-	
+2021 sept. 05 15:58:14 FINER i5.las2peer.p2p.LocalNode: NODE_STATUS_CHANGE (300)	-	-	-	-	CONFIGURED	
+2021 sept. 05 15:58:14 FINER i5.las2peer.p2p.LocalNode: NODE_STATUS_CHANGE (300)	-	-	-	-	RUNNING	
+2021 sept. 05 15:58:14 FINER i5.las2peer.p2p.LocalNode: AGENT_REGISTERED (3000)	-8427353876643459507 (java.lang.Long)	0b94e3fd0c6c5f84ff4c9f781bd73525dca5a861dfcbe7b1d49eca11e2d4473ff76c36f82eda5aa122f06406667a99eb08542f8131c5acc674717d387c523890	-	-	ServiceAgent	
+2021 sept. 05 15:58:14 FINER i5.las2peer.p2p.LocalNode: SERVICE_ADD_TO_MONITORING (7300)	-8427353876643459507 (java.lang.Long)	0b94e3fd0c6c5f84ff4c9f781bd73525dca5a861dfcbe7b1d49eca11e2d4473ff76c36f82eda5aa122f06406667a99eb08542f8131c5acc674717d387c523890	-	-	{"serviceName":"i5.las2peer.services.mRCardGameService.MRCardGameService@1.0.0","serviceAlias":"template"}	
+2021 sept. 05 15:58:14 FINER i5.las2peer.p2p.LocalNode: SERVICE_STARTUP (7000)	-8427353876643459507 (java.lang.Long)	0b94e3fd0c6c5f84ff4c9f781bd73525dca5a861dfcbe7b1d49eca11e2d4473ff76c36f82eda5aa122f06406667a99eb08542f8131c5acc674717d387c523890	-	-	i5.las2peer.services.mRCardGameService.MRCardGameService@1.0.0	
+2021 sept. 05 15:58:14 FINER i5.las2peer.p2p.LocalNode: CONNECTOR_MESSAGE (9000)	-8427353876643459507 (java.lang.Long)	-	-	-	WebConnector: Web-Connector in HTTP mode running at http://localhost:51790	
+2021 sept. 05 15:58:14 INFO i5.las2peer.connectors.webConnector.util.AuthenticationManager: attempting login with id: 86109d17e62c60cf01fa1e4e968e8cdc69219d59a04587648f253d71d49a3af51eea113ac37be9501cb196126b56d24de638e0d3f3c8cf1991aab89e215a3cb9
+2021 sept. 05 15:58:15 FINE i5.las2peer.connectors.webConnector.util.AuthenticationManager: passphrase accepted. Agent unlocked
+2021 sept. 05 15:58:15 FINER i5.las2peer.persistency.EnvelopeVersion: Could not get service class loader using default. java.lang.IllegalStateException: Not executed in a ServiceThread environment!
+2021 sept. 05 15:58:15 INFO i5.las2peer.restMapper.GenericExceptionMapper: Request failed: javax.ws.rs.NotFoundException: HTTP 404 Not Found
+javax.ws.rs.NotFoundException: HTTP 404 Not Found
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:252)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:234)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680)
+	at i5.las2peer.restMapper.RESTService.handle(RESTService.java:148)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at i5.las2peer.execution.ServiceHelper.execute(ServiceHelper.java:139)
+	at i5.las2peer.security.ServiceAgentImpl.invoke(ServiceAgentImpl.java:453)
+	at i5.las2peer.security.ServiceAgentImpl.lambda$handle$0(ServiceAgentImpl.java:479)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021 sept. 05 15:58:15 FINER i5.las2peer.p2p.LocalNode: CONNECTOR_MESSAGE (9000)	-8427353876643459507 (java.lang.Long)	-	-	-	WebConnector: Web-Connector has been stopped	
+2021 sept. 05 15:58:15 FINER i5.las2peer.p2p.LocalNode: SERVICE_SHUTDOWN (7100)	-8427353876643459507 (java.lang.Long)	0b94e3fd0c6c5f84ff4c9f781bd73525dca5a861dfcbe7b1d49eca11e2d4473ff76c36f82eda5aa122f06406667a99eb08542f8131c5acc674717d387c523890	-	-	i5.las2peer.services.mRCardGameService.MRCardGameService@1.0.0	
+2021 sept. 05 15:58:15 FINER i5.las2peer.p2p.LocalNode: NODE_SHUTDOWN (200)	-8427353876643459507 (java.lang.Long)	-	-	-	-	
+2021 sept. 05 16:01:44 FINER i5.las2peer.p2p.LocalNode: NODE_STATUS_CHANGE (300)	-	-	-	-	CONFIGURED	
+2021 sept. 05 16:01:44 FINER i5.las2peer.p2p.LocalNode: NODE_STATUS_CHANGE (300)	-	-	-	-	RUNNING	
+2021 sept. 05 16:01:45 FINER i5.las2peer.p2p.LocalNode: AGENT_REGISTERED (3000)	5511150237422276885 (java.lang.Long)	434e27e3746479d6d8ea750a3522dc9f5dd2862c3d22430cc4e303ee2343a6cea28feeed8a50537c03b21e265a5d597e5ad8fbcd32eb326397f9cdfab4990b21	-	-	ServiceAgent	
+2021 sept. 05 16:01:47 FINER i5.las2peer.p2p.LocalNode: SERVICE_ADD_TO_MONITORING (7300)	5511150237422276885 (java.lang.Long)	434e27e3746479d6d8ea750a3522dc9f5dd2862c3d22430cc4e303ee2343a6cea28feeed8a50537c03b21e265a5d597e5ad8fbcd32eb326397f9cdfab4990b21	-	-	{"serviceName":"i5.las2peer.services.mRCardGameService.MRCardGameService@1.0.0","serviceAlias":"template"}	
+2021 sept. 05 16:01:47 FINER i5.las2peer.p2p.LocalNode: SERVICE_STARTUP (7000)	5511150237422276885 (java.lang.Long)	434e27e3746479d6d8ea750a3522dc9f5dd2862c3d22430cc4e303ee2343a6cea28feeed8a50537c03b21e265a5d597e5ad8fbcd32eb326397f9cdfab4990b21	-	-	i5.las2peer.services.mRCardGameService.MRCardGameService@1.0.0	
+2021 sept. 05 16:01:48 FINER i5.las2peer.p2p.LocalNode: CONNECTOR_MESSAGE (9000)	5511150237422276885 (java.lang.Long)	-	-	-	WebConnector: Web-Connector in HTTP mode running at http://localhost:51886	
+2021 sept. 05 16:01:48 INFO i5.las2peer.connectors.webConnector.util.AuthenticationManager: attempting login with id: 86109d17e62c60cf01fa1e4e968e8cdc69219d59a04587648f253d71d49a3af51eea113ac37be9501cb196126b56d24de638e0d3f3c8cf1991aab89e215a3cb9
+2021 sept. 05 16:01:48 FINE i5.las2peer.connectors.webConnector.util.AuthenticationManager: passphrase accepted. Agent unlocked
+2021 sept. 05 16:01:48 FINER i5.las2peer.persistency.EnvelopeVersion: Could not get service class loader using default. java.lang.IllegalStateException: Not executed in a ServiceThread environment!
+2021 sept. 05 16:01:49 FINER i5.las2peer.p2p.LocalNode: CONNECTOR_MESSAGE (9000)	5511150237422276885 (java.lang.Long)	-	-	-	WebConnector: Web-Connector has been stopped	
+2021 sept. 05 16:01:49 FINER i5.las2peer.p2p.LocalNode: SERVICE_SHUTDOWN (7100)	5511150237422276885 (java.lang.Long)	434e27e3746479d6d8ea750a3522dc9f5dd2862c3d22430cc4e303ee2343a6cea28feeed8a50537c03b21e265a5d597e5ad8fbcd32eb326397f9cdfab4990b21	-	-	i5.las2peer.services.mRCardGameService.MRCardGameService@1.0.0	
+2021 sept. 05 16:01:49 FINER i5.las2peer.p2p.LocalNode: NODE_SHUTDOWN (200)	5511150237422276885 (java.lang.Long)	-	-	-	-	
+2021 sept. 05 16:01:49 FINER i5.las2peer.p2p.LocalNode: NODE_STATUS_CHANGE (300)	-	-	-	-	CONFIGURED	
+2021 sept. 05 16:01:49 FINER i5.las2peer.p2p.LocalNode: NODE_STATUS_CHANGE (300)	-	-	-	-	RUNNING	
+2021 sept. 05 16:01:49 FINER i5.las2peer.p2p.LocalNode: AGENT_REGISTERED (3000)	6975143439170814796 (java.lang.Long)	765e8cdabfe64aa357864d1c7fd21d2337cd1d203753100a5eea9873db7737584eaeb7db7ce4d4884265979108f305b322f546e970778a8c2f796bae46eb6bc7	-	-	ServiceAgent	
+2021 sept. 05 16:01:49 FINER i5.las2peer.p2p.LocalNode: SERVICE_ADD_TO_MONITORING (7300)	6975143439170814796 (java.lang.Long)	765e8cdabfe64aa357864d1c7fd21d2337cd1d203753100a5eea9873db7737584eaeb7db7ce4d4884265979108f305b322f546e970778a8c2f796bae46eb6bc7	-	-	{"serviceName":"i5.las2peer.services.mRCardGameService.MRCardGameService@1.0.0","serviceAlias":"template"}	
+2021 sept. 05 16:01:49 FINER i5.las2peer.p2p.LocalNode: SERVICE_STARTUP (7000)	6975143439170814796 (java.lang.Long)	765e8cdabfe64aa357864d1c7fd21d2337cd1d203753100a5eea9873db7737584eaeb7db7ce4d4884265979108f305b322f546e970778a8c2f796bae46eb6bc7	-	-	i5.las2peer.services.mRCardGameService.MRCardGameService@1.0.0	
+2021 sept. 05 16:01:50 FINER i5.las2peer.p2p.LocalNode: CONNECTOR_MESSAGE (9000)	6975143439170814796 (java.lang.Long)	-	-	-	WebConnector: Web-Connector in HTTP mode running at http://localhost:51891	
+2021 sept. 05 16:01:50 INFO i5.las2peer.connectors.webConnector.util.AuthenticationManager: attempting login with id: 86109d17e62c60cf01fa1e4e968e8cdc69219d59a04587648f253d71d49a3af51eea113ac37be9501cb196126b56d24de638e0d3f3c8cf1991aab89e215a3cb9
+2021 sept. 05 16:01:50 FINE i5.las2peer.connectors.webConnector.util.AuthenticationManager: passphrase accepted. Agent unlocked
+2021 sept. 05 16:01:50 FINER i5.las2peer.persistency.EnvelopeVersion: Could not get service class loader using default. java.lang.IllegalStateException: Not executed in a ServiceThread environment!
+2021 sept. 05 16:01:50 FINER i5.las2peer.p2p.LocalNode: CONNECTOR_MESSAGE (9000)	6975143439170814796 (java.lang.Long)	-	-	-	WebConnector: Web-Connector has been stopped	
+2021 sept. 05 16:01:50 FINER i5.las2peer.p2p.LocalNode: SERVICE_SHUTDOWN (7100)	6975143439170814796 (java.lang.Long)	765e8cdabfe64aa357864d1c7fd21d2337cd1d203753100a5eea9873db7737584eaeb7db7ce4d4884265979108f305b322f546e970778a8c2f796bae46eb6bc7	-	-	i5.las2peer.services.mRCardGameService.MRCardGameService@1.0.0	
+2021 sept. 05 16:01:50 FINER i5.las2peer.p2p.LocalNode: NODE_SHUTDOWN (200)	6975143439170814796 (java.lang.Long)	-	-	-	-	

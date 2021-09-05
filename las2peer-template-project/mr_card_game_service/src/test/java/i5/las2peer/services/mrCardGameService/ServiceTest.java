@@ -1,4 +1,4 @@
-package i5.las2peer.services.mrCardGameService;
+package i5.las2peer.services.mRCardGameService;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -15,7 +15,7 @@ import i5.las2peer.connectors.webConnector.client.MiniClient;
 import i5.las2peer.p2p.LocalNode;
 import i5.las2peer.p2p.LocalNodeManager;
 import i5.las2peer.security.UserAgentImpl;
-import i5.las2peer.services.mrCardGameService.MRCardGameService;
+import i5.las2peer.services.mRCardGameService.MRCardGameService;
 import i5.las2peer.testing.MockAgentFactory;
 
 /**

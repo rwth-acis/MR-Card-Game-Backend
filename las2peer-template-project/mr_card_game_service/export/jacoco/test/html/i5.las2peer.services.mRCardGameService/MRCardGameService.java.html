@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MRCardGameService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">mr_card_game_service</a> &gt; <a href="index.source.html" class="el_package">i5.las2peer.services.mRCardGameService</a> &gt; <span class="el_source">MRCardGameService.java</span></div><h1>MRCardGameService.java</h1><pre class="source lang-java linenums">package i5.las2peer.services.mRCardGameService;
+
+import io.swagger.annotations.*;
+
+import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.net.HttpURLConnection;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+import java.net.HttpURLConnection;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+
+import i5.las2peer.api.Context;
+import i5.las2peer.api.security.UserAgent;
+import i5.las2peer.restMapper.RESTService;
+import i5.las2peer.restMapper.annotations.ServicePath;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
+import io.swagger.annotations.Contact;
+import io.swagger.annotations.Info;
+import io.swagger.annotations.License;
+import io.swagger.annotations.SwaggerDefinition;
+
+import java.nio.charset.StandardCharsets;
+
+// TODO Describe your own service
+/**
+ * las2peer-Template-Service
+ * 
+ * This is a template for a very basic las2peer service that uses the las2peer WebConnector for RESTful access to it.
+ * 
+ * Note: If you plan on using Swagger you should adapt the information below in the SwaggerDefinition annotation to suit
+ * your project. If you do not intend to provide a Swagger documentation of your service API, the entire Api and
+ * SwaggerDefinition annotation should be removed.
+ * 
+ */
+// TODO Adjust the following configuration
+@Api
+@SwaggerDefinition(
+		info = @Info(
+				title = &quot;las2peer Template Service&quot;,
+				version = &quot;1.0.0&quot;,
+				description = &quot;A las2peer Template Service for demonstration purposes.&quot;,
+				termsOfService = &quot;http://your-terms-of-service-url.com&quot;,
+				contact = @Contact(
+						name = &quot;John Doe&quot;,
+						url = &quot;provider.com&quot;,
+						email = &quot;john.doe@provider.com&quot;),
+				license = @License(
+						name = &quot;your software license name&quot;,
+						url = &quot;http://your-software-license-url.com&quot;)))
+@ServicePath(&quot;/template&quot;)
+// TODO Your own service class
+<span class="fc" id="L69">public class MRCardGameService extends RESTService</span>
+{
+	/**
+	 * Template of a get function.
+	 * 
+	 * @return Returns an HTTP response with the username as string content.
+	 */
+	@GET
+	@Path(&quot;/get&quot;)
+	@Produces(MediaType.TEXT_PLAIN)
+	@ApiOperation(
+			value = &quot;REPLACE THIS WITH AN APPROPRIATE FUNCTION NAME&quot;,
+			notes = &quot;REPLACE THIS WITH YOUR NOTES TO THE FUNCTION&quot;)
+	@ApiResponses(
+			value = { @ApiResponse(
+					code = HttpURLConnection.HTTP_OK,
+					message = &quot;REPLACE THIS WITH YOUR OK MESSAGE&quot;) })
+	public Response getTemplate() {
+<span class="fc" id="L87">		UserAgent userAgent = (UserAgent) Context.getCurrent().getMainAgent();</span>
+<span class="fc" id="L88">		String name = userAgent.getLoginName();</span>
+<span class="fc" id="L89">		return Response.ok().entity(name).build();</span>
+	}
+
+	/**
+	 * Template of a post function.
+	 * 
+	 * @param myInput The post input the user will provide.
+	 * @return Returns an HTTP response with plain text string content derived from the path input param.
+	 */
+	@POST
+	@Path(&quot;/post/{input}&quot;)
+	@Produces(MediaType.TEXT_PLAIN)
+	@ApiResponses(
+			value = { @ApiResponse(
+					code = HttpURLConnection.HTTP_OK,
+					message = &quot;REPLACE THIS WITH YOUR OK MESSAGE&quot;) })
+	@ApiOperation(
+			value = &quot;REPLACE THIS WITH AN APPROPRIATE FUNCTION NAME&quot;,
+			notes = &quot;Example method that returns a phrase containing the received input.&quot;)
+	public Response postTemplate(@PathParam(&quot;input&quot;) String myInput) {
+<span class="fc" id="L109">		String returnString = &quot;&quot;;</span>
+<span class="fc" id="L110">		returnString += &quot;Input &quot; + myInput;</span>
+<span class="fc" id="L111">		return Response.ok().entity(returnString).build();</span>
+	}
+
+	// TODO your own service methods, e. g. for RMI
+	@GET
+	@Path(&quot;/ping&quot;)
+	@Produces(MediaType.TEXT_PLAIN)
+	@ApiOperation(
+			value = &quot;Check if the server is online&quot;,
+			notes = &quot;Returns a string&quot;)
+	@ApiResponses(
+			value = { @ApiResponse(
+					code = HttpURLConnection.HTTP_OK,
+					message = &quot;REPLACE THIS WITH YOUR OK MESSAGE&quot;) })
+	public Response ping() {
+<span class="nc" id="L126">		System.out.println(&quot;Ping received&quot;);</span>
+<span class="nc" id="L127">		return Response.ok().entity(&quot;pong&quot;).build();</span>
+	}                                 
+	
+	// TODO your own service methods, e. g. for RMI	
+	
+	// The method used to get all the levels that were saved
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	@ApiOperation(
+	    value = &quot;Get Levels&quot;,
+	    notes = &quot;Returns the list of projects which are saved on the server&quot;)
+	@ApiResponses(
+	    value = { @ApiResponse(
+	        code = HttpURLConnection.HTTP_OK,
+	        message = &quot;REPLACE THIS WITH YOUR OK MESSAGE&quot;) })
+	public Response getLevels() {
+		
+		// Get the save directory file
+<span class="nc" id="L145">	    File saveDir = new File(&quot;saveLevel&quot;);</span>
+	    
+	    // Get the array of all directories
+<span class="nc" id="L148">	    File[] saveFiles = saveDir.listFiles();</span>
+	         
+	    // Try to convert the array and return it
+	    try 
+	    {
+<span class="nc" id="L153">	        String result = UnityConverter.toUnityCompatibleArray(saveFiles);</span>
+<span class="nc" id="L154">	        return Response.ok().entity(result).build();</span>
+	    }
+	         
+	    // Catch the exception if one was thrown
+<span class="nc" id="L158">	    catch (IOException e)</span>
+	    {
+<span class="nc" id="L160">	        return Response.serverError().entity(e).build();</span>
+	    }
+	}
+	
+	@GET
+	@Path(&quot;/{levelName}&quot;)
+    @Produces(MediaType.APPLICATION_JSON)
+    @ApiOperation(
+            value = &quot;Get the files in a level&quot;,
+            notes = &quot;Returns the list of projects which are saved on the server&quot;)
+    @ApiResponses(
+            value = { @ApiResponse(
+                    code = HttpURLConnection.HTTP_OK,
+                    message = &quot;REPLACE THIS WITH YOUR OK MESSAGE&quot;) })
+    public Response getFilesInLevel(@PathParam(&quot;levelName&quot;) String levelName)
+	{
+		// Get the level directory
+<span class="nc" id="L177">		File levelDir = new File(&quot;saveLevel/&quot; + levelName);</span>
+		
+<span class="nc" id="L179">		System.out.println(&quot;Trying to access the files in the directory: &quot; + levelDir);</span>
+		
+		// Get the array of json files in the level directory
+<span class="nc" id="L182">        File[] saveFiles = levelDir.listFiles((d, name) -&gt; name.endsWith(&quot;.json&quot;));</span>
+        
+        // Initialize the array of names with the length of the save files array
+<span class="nc" id="L185">        String[] names = new String[saveFiles.length];</span>
+        
+        // Go through all the save files
+<span class="nc bnc" id="L188" title="All 2 branches missed.">        for (int i=0;i&lt;saveFiles.length;i++)</span>
+        {
+        	// Extract the name of the file
+<span class="nc" id="L191">            String fullName = saveFiles[i].getName();</span>
+            
+            // Remove the .json ending
+<span class="nc" id="L194">            names[i] = fullName.substring(0, fullName.length() - 5);</span>
+        }
+        
+        // Try to convert it to a unity compatible array and return it
+        try
+		{
+<span class="nc" id="L200">            String result = UnityConverter.toUnityCompatibleArray(names);</span>
+<span class="nc" id="L201">            return Response.ok().entity(result).build();</span>
+        }
+        
+        // Catch the exception if it was thrown
+<span class="nc" id="L205">        catch (IOException e)</span>
+        {
+<span class="nc" id="L207">            return Response.serverError().entity(e).build();</span>
+        }
+    }
+	
+	
+	 // The method used to load a file
+	@GET
+	@Path(&quot;/{levelName}/{fileName}&quot;)
+	@Produces(MediaType.APPLICATION_JSON)
+	@ApiOperation(
+			value = &quot;Loads the data file with the given name and in the level with the given name1&quot;,
+			notes = &quot;Returns the content of the save file1&quot;)
+	@ApiResponses(
+			value = { @ApiResponse(
+					code = HttpURLConnection.HTTP_OK,
+					message = &quot;REPLACE THIS WITH YOUR OK MESSAGE&quot;) })
+	public Response loadData(@PathParam(&quot;levelName&quot;) String levelName, @PathParam(&quot;fileName&quot;) String fileName)
+	{
+		// Get the path to the file to load
+<span class="nc" id="L226">		String filePath = &quot;saveLevel/&quot; + levelName + &quot;/&quot; + fileName + &quot;.json&quot;;</span>
+		
+<span class="nc" id="L228">		System.out.println(&quot;Trying to access the file: &quot; + filePath);</span>
+		
+		try
+        {
+			// Get the string contained in the json file at path saveData/saveName
+<span class="nc" id="L233">            String content = new String(Files.readAllBytes(Paths.get(filePath)));</span>
+            
+<span class="nc" id="L235">            System.out.println(&quot;The text that was found in the file was: &quot; + content);</span>
+            
+            // Return the file content
+<span class="nc" id="L238">            return Response.ok().entity(content).build();</span>
+        }
+		
+		// Check if an exception was thrown because the file could not be found
+<span class="nc" id="L242">        catch (FileNotFoundException e)</span>
+        {
+<span class="nc" id="L244">            return Response.ok().entity(&quot;{ }&quot;).build();</span>
+        }
+		
+		// Check if an exception was thrown because the server could not be reached
+<span class="nc" id="L248">        catch (IOException e)</span>
+        {
+<span class="nc" id="L250">            return Response.serverError().entity(e).build();</span>
+        }
+	}
+	
+	// The method used to save a file
+	@POST
+	@Path(&quot;/{levelName}/{fileName}&quot;)
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+	@ApiOperation(
+			value = &quot;Saves the data4&quot;,
+			notes = &quot;Returns whether the operation was successful4&quot;)
+	@ApiResponses(
+			value = { @ApiResponse(
+					code = HttpURLConnection.HTTP_OK,
+					message = &quot;The file was saved correctly.&quot;) })
+	public Response saveData(@PathParam(&quot;levelName&quot;) String levelName, @PathParam(&quot;fileName&quot;) String fileName, byte[] givenArray)
+	{		
+		// Get the path to the file that should be created
+<span class="nc" id="L269">		String directoryPath = &quot;saveLevel/&quot; + levelName;</span>
+<span class="nc" id="L270">		String filePath = directoryPath + &quot;/&quot; + fileName + &quot;.json&quot;;</span>
+		
+		// Get the directory in which the file should be saved
+<span class="nc" id="L273">		File directory = new File(directoryPath);</span>
+		
+		// Check if the directories leading to it and including it exist
+<span class="nc bnc" id="L276" title="All 2 branches missed.">		if (!directory.exists())</span>
+		{
+			// Create it if it does not exist
+<span class="nc" id="L279">			directory.mkdirs();</span>
+		}
+		 
+		// Convert the byte array to a string
+<span class="nc" id="L283">		String content = new String(givenArray, StandardCharsets.UTF_8);</span>
+		 
+<span class="nc" id="L285">		System.out.println(&quot;Trying to create a file: &quot; + filePath);</span>
+		
+		// Try to print out the given text in a json file with name saveName at the right path
+<span class="nc" id="L288">		try (PrintWriter out = new PrintWriter(filePath))</span>
+        {
+<span class="nc" id="L290">            out.println(content);</span>
+<span class="nc" id="L291">            System.out.println(&quot;The text that was given was: &quot; + content);</span>
+        }
+		
+		// Check if an exception was thrown
+<span class="nc" id="L295">        catch (FileNotFoundException e)</span>
+        {
+<span class="nc" id="L297">            System.out.println(e);</span>
+<span class="nc" id="L298">        }</span>
+
+		// Return whether the operation was successful
+<span class="nc" id="L301">        return Response.ok().build();</span>
+    }
+	
+	// The ping method
+	@GET
+	@Path(&quot;/write&quot;)
+	@Produces(MediaType.TEXT_PLAIN)
+	@ApiOperation(
+			value = &quot;Check if the server is online&quot;,
+			notes = &quot;Returns a string&quot;)
+	@ApiResponses(
+			value = { @ApiResponse(
+					code = HttpURLConnection.HTTP_OK,
+					message = &quot;REPLACE THIS WITH YOUR OK MESSAGE&quot;) })
+	public void writeLine() {
+<span class="nc" id="L316">		System.out.println(&quot;Ping received&quot;);</span>
+<span class="nc" id="L317">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>
