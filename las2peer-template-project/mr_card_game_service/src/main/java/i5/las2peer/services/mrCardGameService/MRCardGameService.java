@@ -146,11 +146,18 @@ public class MRCardGameService extends RESTService
 	    
 	    // Get the array of all directories
 	    File[] saveFiles = saveDir.listFiles();
+	    
+	    String[] levelNames = new String[saveFiles.length];
+	    
+	    for(int index = 0; index < saveFiles.length; index = index + 1) 
+	    {
+	    	levelNames[index] = saveFiles[index].getName();
+	    }
 	         
 	    // Try to convert the array and return it
 	    try 
 	    {
-	        String result = UnityConverter.toUnityCompatibleArray(saveFiles);
+	        String result = UnityConverter.toUnityCompatibleArray(levelNames);
 	        return Response.ok().entity(result).build();
 	    }
 	         

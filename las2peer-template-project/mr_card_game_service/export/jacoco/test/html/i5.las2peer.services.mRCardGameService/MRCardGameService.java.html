@@ -146,18 +146,25 @@ import java.nio.charset.StandardCharsets;
 	    
 	    // Get the array of all directories
 <span class="nc" id="L148">	    File[] saveFiles = saveDir.listFiles();</span>
+	    
+<span class="nc" id="L150">	    String[] levelNames = new String[saveFiles.length];</span>
+	    
+<span class="nc bnc" id="L152" title="All 2 branches missed.">	    for(int index = 0; index &lt; saveFiles.length; index = index + 1) </span>
+	    {
+<span class="nc" id="L154">	    	levelNames[index] = saveFiles[index].getName();</span>
+	    }
 	         
 	    // Try to convert the array and return it
 	    try 
 	    {
-<span class="nc" id="L153">	        String result = UnityConverter.toUnityCompatibleArray(saveFiles);</span>
-<span class="nc" id="L154">	        return Response.ok().entity(result).build();</span>
+<span class="nc" id="L160">	        String result = UnityConverter.toUnityCompatibleArray(levelNames);</span>
+<span class="nc" id="L161">	        return Response.ok().entity(result).build();</span>
 	    }
 	         
 	    // Catch the exception if one was thrown
-<span class="nc" id="L158">	    catch (IOException e)</span>
+<span class="nc" id="L165">	    catch (IOException e)</span>
 	    {
-<span class="nc" id="L160">	        return Response.serverError().entity(e).build();</span>
+<span class="nc" id="L167">	        return Response.serverError().entity(e).build();</span>
 	    }
 	}
 	
@@ -174,37 +181,37 @@ import java.nio.charset.StandardCharsets;
     public Response getFilesInLevel(@PathParam(&quot;levelName&quot;) String levelName)
 	{
 		// Get the level directory
-<span class="nc" id="L177">		File levelDir = new File(&quot;saveLevel/&quot; + levelName);</span>
+<span class="nc" id="L184">		File levelDir = new File(&quot;saveLevel/&quot; + levelName);</span>
 		
-<span class="nc" id="L179">		System.out.println(&quot;Trying to access the files in the directory: &quot; + levelDir);</span>
+<span class="nc" id="L186">		System.out.println(&quot;Trying to access the files in the directory: &quot; + levelDir);</span>
 		
 		// Get the array of json files in the level directory
-<span class="nc" id="L182">        File[] saveFiles = levelDir.listFiles((d, name) -&gt; name.endsWith(&quot;.json&quot;));</span>
+<span class="nc" id="L189">        File[] saveFiles = levelDir.listFiles((d, name) -&gt; name.endsWith(&quot;.json&quot;));</span>
         
         // Initialize the array of names with the length of the save files array
-<span class="nc" id="L185">        String[] names = new String[saveFiles.length];</span>
+<span class="nc" id="L192">        String[] names = new String[saveFiles.length];</span>
         
         // Go through all the save files
-<span class="nc bnc" id="L188" title="All 2 branches missed.">        for (int i=0;i&lt;saveFiles.length;i++)</span>
+<span class="nc bnc" id="L195" title="All 2 branches missed.">        for (int i=0;i&lt;saveFiles.length;i++)</span>
         {
         	// Extract the name of the file
-<span class="nc" id="L191">            String fullName = saveFiles[i].getName();</span>
+<span class="nc" id="L198">            String fullName = saveFiles[i].getName();</span>
             
             // Remove the .json ending
-<span class="nc" id="L194">            names[i] = fullName.substring(0, fullName.length() - 5);</span>
+<span class="nc" id="L201">            names[i] = fullName.substring(0, fullName.length() - 5);</span>
         }
         
         // Try to convert it to a unity compatible array and return it
         try
 		{
-<span class="nc" id="L200">            String result = UnityConverter.toUnityCompatibleArray(names);</span>
-<span class="nc" id="L201">            return Response.ok().entity(result).build();</span>
+<span class="nc" id="L207">            String result = UnityConverter.toUnityCompatibleArray(names);</span>
+<span class="nc" id="L208">            return Response.ok().entity(result).build();</span>
         }
         
         // Catch the exception if it was thrown
-<span class="nc" id="L205">        catch (IOException e)</span>
+<span class="nc" id="L212">        catch (IOException e)</span>
         {
-<span class="nc" id="L207">            return Response.serverError().entity(e).build();</span>
+<span class="nc" id="L214">            return Response.serverError().entity(e).build();</span>
         }
     }
 	
@@ -223,31 +230,31 @@ import java.nio.charset.StandardCharsets;
 	public Response loadData(@PathParam(&quot;levelName&quot;) String levelName, @PathParam(&quot;fileName&quot;) String fileName)
 	{
 		// Get the path to the file to load
-<span class="nc" id="L226">		String filePath = &quot;saveLevel/&quot; + levelName + &quot;/&quot; + fileName + &quot;.json&quot;;</span>
+<span class="nc" id="L233">		String filePath = &quot;saveLevel/&quot; + levelName + &quot;/&quot; + fileName + &quot;.json&quot;;</span>
 		
-<span class="nc" id="L228">		System.out.println(&quot;Trying to access the file: &quot; + filePath);</span>
+<span class="nc" id="L235">		System.out.println(&quot;Trying to access the file: &quot; + filePath);</span>
 		
 		try
         {
 			// Get the string contained in the json file at path saveData/saveName
-<span class="nc" id="L233">            String content = new String(Files.readAllBytes(Paths.get(filePath)));</span>
+<span class="nc" id="L240">            String content = new String(Files.readAllBytes(Paths.get(filePath)));</span>
             
-<span class="nc" id="L235">            System.out.println(&quot;The text that was found in the file was: &quot; + content);</span>
+<span class="nc" id="L242">            System.out.println(&quot;The text that was found in the file was: &quot; + content);</span>
             
             // Return the file content
-<span class="nc" id="L238">            return Response.ok().entity(content).build();</span>
+<span class="nc" id="L245">            return Response.ok().entity(content).build();</span>
         }
 		
 		// Check if an exception was thrown because the file could not be found
-<span class="nc" id="L242">        catch (FileNotFoundException e)</span>
+<span class="nc" id="L249">        catch (FileNotFoundException e)</span>
         {
-<span class="nc" id="L244">            return Response.ok().entity(&quot;{ }&quot;).build();</span>
+<span class="nc" id="L251">            return Response.ok().entity(&quot;{ }&quot;).build();</span>
         }
 		
 		// Check if an exception was thrown because the server could not be reached
-<span class="nc" id="L248">        catch (IOException e)</span>
+<span class="nc" id="L255">        catch (IOException e)</span>
         {
-<span class="nc" id="L250">            return Response.serverError().entity(e).build();</span>
+<span class="nc" id="L257">            return Response.serverError().entity(e).build();</span>
         }
 	}
 	
@@ -266,39 +273,39 @@ import java.nio.charset.StandardCharsets;
 	public Response saveData(@PathParam(&quot;levelName&quot;) String levelName, @PathParam(&quot;fileName&quot;) String fileName, byte[] givenArray)
 	{		
 		// Get the path to the file that should be created
-<span class="nc" id="L269">		String directoryPath = &quot;saveLevel/&quot; + levelName;</span>
-<span class="nc" id="L270">		String filePath = directoryPath + &quot;/&quot; + fileName + &quot;.json&quot;;</span>
+<span class="nc" id="L276">		String directoryPath = &quot;saveLevel/&quot; + levelName;</span>
+<span class="nc" id="L277">		String filePath = directoryPath + &quot;/&quot; + fileName + &quot;.json&quot;;</span>
 		
 		// Get the directory in which the file should be saved
-<span class="nc" id="L273">		File directory = new File(directoryPath);</span>
+<span class="nc" id="L280">		File directory = new File(directoryPath);</span>
 		
 		// Check if the directories leading to it and including it exist
-<span class="nc bnc" id="L276" title="All 2 branches missed.">		if (!directory.exists())</span>
+<span class="nc bnc" id="L283" title="All 2 branches missed.">		if (!directory.exists())</span>
 		{
 			// Create it if it does not exist
-<span class="nc" id="L279">			directory.mkdirs();</span>
+<span class="nc" id="L286">			directory.mkdirs();</span>
 		}
 		 
 		// Convert the byte array to a string
-<span class="nc" id="L283">		String content = new String(givenArray, StandardCharsets.UTF_8);</span>
+<span class="nc" id="L290">		String content = new String(givenArray, StandardCharsets.UTF_8);</span>
 		 
-<span class="nc" id="L285">		System.out.println(&quot;Trying to create a file: &quot; + filePath);</span>
+<span class="nc" id="L292">		System.out.println(&quot;Trying to create a file: &quot; + filePath);</span>
 		
 		// Try to print out the given text in a json file with name saveName at the right path
-<span class="nc" id="L288">		try (PrintWriter out = new PrintWriter(filePath))</span>
+<span class="nc" id="L295">		try (PrintWriter out = new PrintWriter(filePath))</span>
         {
-<span class="nc" id="L290">            out.println(content);</span>
-<span class="nc" id="L291">            System.out.println(&quot;The text that was given was: &quot; + content);</span>
+<span class="nc" id="L297">            out.println(content);</span>
+<span class="nc" id="L298">            System.out.println(&quot;The text that was given was: &quot; + content);</span>
         }
 		
 		// Check if an exception was thrown
-<span class="nc" id="L295">        catch (FileNotFoundException e)</span>
+<span class="nc" id="L302">        catch (FileNotFoundException e)</span>
         {
-<span class="nc" id="L297">            System.out.println(e);</span>
-<span class="nc" id="L298">        }</span>
+<span class="nc" id="L304">            System.out.println(e);</span>
+<span class="nc" id="L305">        }</span>
 
 		// Return whether the operation was successful
-<span class="nc" id="L301">        return Response.ok().build();</span>
+<span class="nc" id="L308">        return Response.ok().build();</span>
     }
 	
 	// The ping method
@@ -313,7 +320,7 @@ import java.nio.charset.StandardCharsets;
 					code = HttpURLConnection.HTTP_OK,
 					message = &quot;REPLACE THIS WITH YOUR OK MESSAGE&quot;) })
 	public void writeLine() {
-<span class="nc" id="L316">		System.out.println(&quot;Ping received&quot;);</span>
-<span class="nc" id="L317">	}</span>
+<span class="nc" id="L323">		System.out.println(&quot;Ping received&quot;);</span>
+<span class="nc" id="L324">	}</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>
